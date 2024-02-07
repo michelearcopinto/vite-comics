@@ -11,8 +11,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "@/src/styles/partials/variables" as *;
-@use "@/src/styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 h1 {
   color: $font-color-second;

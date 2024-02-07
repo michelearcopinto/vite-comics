@@ -1,5 +1,5 @@
 <script>
-import ExampleName from "./components/header/NavBar.vue";
+import NavBar from "./components/header/NavBar.vue";
 
 export default {
   components: {
@@ -11,7 +11,7 @@ export default {
 <template>
   <h1>Hello World</h1>
 
-  <ExampleName />
+  <NavBar />
 </template>
 
 <style lang="scss">

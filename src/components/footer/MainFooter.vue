@@ -69,7 +69,7 @@ export default {
         <div>
           <h2>sites</h2>
           <ul>
-            <li v-for="element in dcComicsFirst">
+            <li v-for="element in sitesFourth">
               <a href="">{{ element }}</a>
             </li>
           </ul>

@@ -2,7 +2,7 @@
 // import
 
 export default {
-  name: "ExampleName",
+  name: "NavBar",
 };
 </script>
 
@@ -11,8 +11,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/variables" as *;
-@use "../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 
 h1 {
   color: $font-color-second;

@@ -1,9 +1,9 @@
 <script>
-import ExampleName from "./components/ExampleName.vue";
+import ExampleName from "./components/header/NavBar.vue";
 
 export default {
   components: {
-    ExampleName,
+    NavBar,
   },
 };
 </script>

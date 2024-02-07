@@ -1,8 +1,11 @@
 <script>
-// import
+import Jumbotron from "./Jumbotron.vue";
 
 export default {
   name: "NavBar",
+  components: {
+    Jumbotron,
+  },
   data() {
     return {
       listItems: [
@@ -55,7 +58,7 @@ export default {
 
 <template>
   <header>
-    <nav>
+    <nav class="container">
       <figure>
         <img src="../../assets/img/dc-logo.png" alt="logo-header" />
       </figure>
@@ -69,6 +72,7 @@ export default {
         </li>
       </ul>
     </nav>
+    <Jumbotron />
   </header>
 </template>
 
@@ -77,16 +81,18 @@ export default {
 @use "../../styles/partials/mixins" as *;
 
 header {
-  padding-top: 25px;
-
   nav {
-    figure:hover {
-      cursor: pointer;
-    }
-
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+
+    figure {
+      padding-block: 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
     ul {
       display: flex;
@@ -94,8 +100,9 @@ header {
       font-weight: 700;
 
       li {
-        line-height: 80px;
+        line-height: 143px;
         padding-inline: 10px;
+        font-size: 20px;
 
         &:hover {
           cursor: pointer;

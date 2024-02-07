@@ -5,12 +5,14 @@ export default {
   components: {
     NavBar,
   },
+  data() {
+    return {};
+  },
+  methods: {},
 };
 </script>
 
 <template>
-  <h1>Hello World</h1>
-
   <NavBar />
 </template>
 

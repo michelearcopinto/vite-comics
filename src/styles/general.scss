@@ -1,7 +1,16 @@
 @use "./partials/variables" as *;
 @use "./partials/mixins" as *;
 
-h1 {
-    color: $font-color;
-    @include main-font-center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
 }

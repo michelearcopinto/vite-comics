@@ -38,7 +38,9 @@ export default {
         <figure>
           <img :src="element.pathImg" :alt="index + 1" />
         </figure>
-        <span>{{ element.text }}</span>
+        <span
+          ><a href="">{{ element.text }}</a></span
+        >
       </div>
     </div>
   </section>
@@ -76,9 +78,14 @@ section {
       }
 
       span {
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 400;
+        display: flex;
+        align-items: center;
+
+        a {
+          text-transform: uppercase;
+          font-size: 20px;
+          font-weight: 400;
+        }
       }
     }
   }

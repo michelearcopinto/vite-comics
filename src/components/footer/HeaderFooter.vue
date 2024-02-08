@@ -21,7 +21,7 @@ export default {
           text: "comic shop locator",
         },
         {
-          pathImg: "./src/assets/img/buy-dc-power-visa.png",
+          pathImg: "./src/assets/img/buy-dc-power-visa.svg",
           text: "dc power visa",
         },
       ],
@@ -66,9 +66,13 @@ section {
       gap: 15px;
 
       figure {
-        width: 60px;
         display: flex;
         align-items: center;
+
+        img {
+          height: 50px;
+          max-width: 50px;
+        }
       }
 
       span {

@@ -10,7 +10,7 @@ export default {
 
 <template>
   <figure>
-    <div class="container">--&gt; Content goes here &lt;--</div>
+    <img src="../../assets/img/jumbotron.jpg" alt="jumbotron" />
   </figure>
 </template>
 
@@ -23,6 +23,10 @@ figure {
   color: white;
   font-size: 30px;
   font-weight: 700;
-  padding-block: 40px;
+  height: 400px;
+  overflow: hidden;
+
+  img {
+  }
 }
 </style>

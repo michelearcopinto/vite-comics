@@ -1,17 +1,21 @@
 <script>
+import ListComics from "../main/ListComics.vue";
+
 export default {
   name: "Jumbotron",
-  data() {
-    return {};
+  components: {
+    ListComics,
   },
-  methods: {},
 };
 </script>
 
 <template>
-  <figure>
-    <img src="../../assets/img/jumbotron.jpg" alt="jumbotron" />
-  </figure>
+  <section>
+    <figure>
+      <img src="../../assets/img/jumbotron.jpg" alt="jumbotron" />
+    </figure>
+  </section>
+  <ListComics />
 </template>
 
 <style lang="scss" scoped>
@@ -23,10 +27,7 @@ figure {
   color: white;
   font-size: 30px;
   font-weight: 700;
-  height: 400px;
+  height: 350px;
   overflow: hidden;
-
-  img {
-  }
 }
 </style>
